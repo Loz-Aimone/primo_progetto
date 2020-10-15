@@ -5,9 +5,8 @@ from  django.http  import  HttpResponse
 # Crea le tue visualizzazioni qui.
 
 #L1
-def  homepage ( richiesta ):
-    return  HttpResponse ( "<h1> Benvenuti nella homepage di Loz Marketing Srl®! </h1>" )
-
+def  homepage ( request ):
+    return render(request, "homepage.html")
 #L2
 def menu(request):
     return HttpResponse("<ol><li>Prima opzione</li><li>Seconda opzione</li><li>Terza opzione</li></ol>")
