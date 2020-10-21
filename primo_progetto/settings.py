@@ -25,7 +25,7 @@ SECRET_KEY = '_iap%-+cfj5#nh$ezdy9s^z6zwg9d(@d_sq^7ig-b#=5p7k0ls'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
