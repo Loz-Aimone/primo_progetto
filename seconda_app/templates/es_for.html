@@ -1,13 +1,9 @@
 {% extends 'base.html'%}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
+
 	{%block title%}
     {{block.super}} | for
     {%endblock title%}
-</head>
-<body>
+
 	{%block content%}
 Looping over a sequence of items using <b>forloop.counter</b> variable:
 	<br/>
@@ -70,5 +66,3 @@ Looping over a sequence of items using <b>forloop.counter</b> variable:
 		<i>Item</i> - {{ x }}<br/>
 	{% endfor %}
 	{%endblock content%}
-</body>
-</html>
