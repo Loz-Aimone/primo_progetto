@@ -18,7 +18,7 @@ class ArticoloDetailViewCB(DetailView):
     model = Articolo
     template_name = "articolo_detail.html"
 
-class ArticoloListViews(ListView):
+class ArticoloListView(ListView):
     model = Articolo
     template_name = "lista_articoli.html"
 
