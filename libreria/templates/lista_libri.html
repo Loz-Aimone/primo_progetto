@@ -7,9 +7,9 @@
 {%block content%}
     <h4>Libri:</h4>
     {% for libro in libri %}
-    <p><strong>Titolo: </strong><a href ="/libreria/libri/{{ libro.id }}">{{ libro.titolo }}</a></p>
-    <p><strong>Genere: </strong>{{  libro.genere }}</p>
-    <p><strong>Autore: </strong>{{ libro.autore }}</p>
+    <p><strong>Titolo: </strong><a href ="/libreria/lista_libri/{{ libro.id }}">{{ libro.titolo }}</a></p>
+    <p><strong>Genere: </strong>{% for Genere in libro.Genere.all %}{{ Genere }} {% endfor %}</p>
+    <p><strong>Autore: </strong>{{ libro.Autore }}</p>
     <p><strong>ISBN: </strong>{{ libro.ISBN }}</p>
     <hr>
     {% endfor %}
