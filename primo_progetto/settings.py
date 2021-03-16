@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'prima_app',
     'news',
     'libreria',
-    'forms_app'
+    'forms_app',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
